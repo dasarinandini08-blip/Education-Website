@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2022</h1>
+     </section>
+        <!-------------------blog page content---------------------->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2022</h2>
+            <p>Our **certificate programs** are meticulously designed to provide individuals with specialized,
+                 practical knowledge that is highly regarded in various industries. Each program is structured 
+                 around key competencies that employers seek in potential candidates, ensuring that graduates not 
+                 only have theoretical knowledge but also the skills that are directly applicable in the workforce. 
+                 By completing a certificate program, you demonstrate your commitment to continuous learning and professional 
+                 development, making you a more competitive candidate in your field. Whether you're looking to specialize in a
+                  specific area or broaden your expertise, our programs offer a comprehensive, structured learning path that sets
+                 you up for success in your career.</p>
+                <br>
+                <p>Our **online programs** offer the flexibility to study from anywhere in the world while maintaining the same academic 
+                    rigor and quality as our traditional on-campus offerings. These programs are built to accommodate busy professionals, 
+                    allowing you to learn at your own pace without disrupting your work-life balance. Through interactive learning platforms, 
+                    students engage in real-time discussions, access resources and materials, and complete assignments and assessments that test their 
+                    understanding of key concepts.<br> The online environment fosters a sense of community, with peer-to-peer collaboration and faculty support
+                     helping to guide students through their educational journey. Additionally, our online programs provide opportunities for networking, 
+                     opening doors to a global community of learners, industry experts, and future employers.</p>
+                    <br>
+                    <p>For those enrolling in our **2022 programs**, the landscape of education has evolved significantly. 
+                        The ongoing changes in the global workforce demand adaptable, tech-savvy professionals who can not only 
+                        handle the complexities of their current roles but also anticipate future trends and challenges.<br> Our 2022 programs 
+                        are aligned with these developments, emphasizing **critical thinking**,<br> **problem-solving**, and **innovative practices**.
+                         We incorporate cutting-edge tools, technologies, and methodologies in the curriculum, preparing students for the evolving 
+                         demands of the job market. Moreover, with our commitment to lifelong learning, these programs are an investment in your 
+                         long-term career growth, equipping you with the knowledge and skills that will help you stand out in a competitive job market
+                          and navigate a rapidly changing professional landscape.</p>
+            
+                        <div class="comment-box">
+                            <h3>Leave a comment</h3>
+                            <form class="comment-form">
+                                <input type="text" placeholder="Enter Name">
+                                <input type="email" placeholder="Enter Email">
+                                <textarea rows="5" placeholder="Your comment"></textarea>
+                                <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                            </form>
+                        </div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalisim</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+<!-------------------footer---------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We offer a wide range of undergraduate and graduate programs supported by experienced 
+        faculty and cutting-edge facilities.<br> Our campus is home to a diverse community of 
+        students from all walks of life, and we strive to create an inclusive environment where everyone can thrive.
+        From state-of-the-art laboratories and research centers to vibrant student organizations
+         and recreational facilities, we provide everything our students need to succeed academically and socially. 
+         Join us at University and become part of a legacy of excellence.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+<!-----JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

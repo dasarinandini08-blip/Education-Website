@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Making</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+     </section>
+     <!-------------------Course---------------------->
+     <section class="course">
+        <h1>Courses We Offer</h1>
+        <P>Our University Offers Various Courses.</P>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>An intermediate course often requires a basic understanding of the subject matter. Learners are expected to have foundational knowledge or experience before taking on intermediate content.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>A degree is an important academic credential that signifies a person's academic achievements and expertise in a particular field of study. Earning a degree helps individuals acquire specialized knowledge and skills that are recognized by employers and academic institutions globally.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Postgraduation is an essential step for individuals seeking to specialize in a field, advance their careers, or make significant contributions to knowledge through research. Postgraduate education can open doors to more advanced, high-paying jobs and provide the qualifications necessary for leadership, research, and academic careers.</p>
+            </div>
+         </div>
+        </section>
+<!-------------------Facilities---------------------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our campus is equipped with state-of-the-art facilities designed to provide an optimal learning and living experience for students.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Our library offers an extensive collection of books, journals, and digital resources, with quiet study areas and modern technology to support your academic needs..</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>Our campus features the largest playground, offering ample space for sports, recreational activities, and outdoor events. With well-maintained fields for football, basketball, and athletics, it provides a perfect environment for students to stay active and engage in team-building activities.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Our campus offers a wide variety of tasty and nutritious meals prepared with fresh ingredients. From wholesome salads to delicious main courses, we cater to all dietary needs, ensuring students enjoy healthy food options that fuel both body and mind.</p>
+        </div>
+    </div>
+</section>
+<!-------------------footer---------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p> we are dedicated to fostering academic excellence, encouraging personal growth, and empowering students to make a difference in the world. With a diverse and inclusive community, we provide a supportive environment for learning and development. Join us in shaping the future of education and building a better tomorrow.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> Worlds Largest University</p>
+</section>
+<!-----JavaScript for Toggle Menu-------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
